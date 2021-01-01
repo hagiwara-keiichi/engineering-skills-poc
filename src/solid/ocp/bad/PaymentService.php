@@ -1,10 +1,9 @@
 <?php
 declare(strict_types=1);
 
-require_once "../../../../vendor/autoload.php";
+namespace myapp\solid\ocp\bad;
 
-use myapp\solid\ocp\bad\Card;
-use myapp\solid\ocp\bad\Apple;
+require_once "../../../../vendor/autoload.php";
 
 /**
  * Class PaymentService
