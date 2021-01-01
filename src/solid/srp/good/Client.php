@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-require_once "../../../../vendor/autoload.php";
+namespace myapp\solid\srp\good;
 
-use myapp\solid\srp\good\EmployeeFacade;
+require_once "../../../../vendor/autoload.php";
 
 $client = new EmployeeFacade();
 $client->saveEmployee();

@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace myapp\solid\srp\bad;
+
 /**
  * Class Employee
  */
