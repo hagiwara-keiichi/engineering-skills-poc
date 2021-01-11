@@ -1,0 +1,15 @@
+<?php
+    define("BASE_DIR", "./files/");
+    $file_name = basename(filter_input(INPUT_GET, "file_name"));
+?>
+
+<html lang="ja">
+    <body>
+        <form>
+            <!-- basename関数を通すので ../../../../../../etc/passwd が入力されたとしても passwd だけが取り出される -->
+            <input type="text" name="file_name">
+            <input type="submit" value="実行"><br>
+        </form>
+        <?php readfile(BASE_DIR . $file_name); ?>
+    </body>
+</html>
