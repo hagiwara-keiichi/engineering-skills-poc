@@ -30,4 +30,4 @@
   - Terminal
     - 原点に立ち返ってコマンドで一個ずつ確かめたいとき
     - git add . && git commit -m "" && git push などのようにワンライナーでやりたいときなど
-  
+test1
