@@ -6,13 +6,18 @@
   },
   "require-dev" : {
     "squizlabs/php_codesniffer": "3.*",
-    "phpmd/phpmd" : "@stable"
+    "phpmd/phpmd" : "@stable",
+    "phpunit/phpunit": "^9.5"
   },
   "scripts": {
-    "test": [
+    "lint": [
       "composer install",
       "./vendor/bin/phpmd ./src/ text codesize,design,naming,unusedcode",
       "./vendor/bin/phpcs --standard=PSR2 --colors ./src/"
+    ],
+    "test": [
+      "composer install",
+      "./vendor/bin/phpunit ./src/"
     ]
   }
 }
