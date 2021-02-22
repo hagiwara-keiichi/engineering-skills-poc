@@ -9,4 +9,4 @@ use myapp\solid\dip\bad\Service\EmployeeService;
 
 require_once "../../../../vendor/autoload.php";
 
-echo (new EmployeeController(new EmployeeService(new EmployeeRepository())))->Pay(1) . "\n";
+echo (new EmployeeController(new EmployeeService(new EmployeeRepository())))->pay(1) . "\n";

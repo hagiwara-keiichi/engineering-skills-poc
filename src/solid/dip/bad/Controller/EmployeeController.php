@@ -8,6 +8,7 @@ use myapp\solid\dip\bad\Service\EmployeeService;
 
 /**
  * Class EmployeeController
+ *
  * @package myapp\solid\dip\bad\Controller
  */
 class EmployeeController
@@ -15,23 +16,24 @@ class EmployeeController
     /**
      * @var EmployeeService
      */
-    private $_service;
+    private $service;
 
     /**
      * EmployeeController constructor.
+     *
      * @param EmployeeService $service
      */
     public function __construct(EmployeeService $service)
     {
-        $this->_service = $service;
+        $this->service = $service;
     }
 
     /**
-     * @param int $employeeId
+     * @param  int $employeeId
      * @return string
      */
-    public function Pay(int $employeeId): string
+    public function pay(int $employeeId): string
     {
-        return $this->_service->fetchEmployeeSalary($employeeId);
+        return $this->service->fetchEmployeeSalary($employeeId);
     }
 }

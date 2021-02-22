@@ -2,8 +2,12 @@
 declare(strict_types=1);
 
 namespace myapp\dry;
-require_once "../../vendor/autoload.php";
 
+/**
+ * Class Good
+ *
+ * @package myapp\dry
+ */
 class Good
 {
     public function previewAction()

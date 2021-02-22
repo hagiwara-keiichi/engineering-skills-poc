@@ -5,6 +5,7 @@ namespace myapp\solid\srp\good;
 
 /**
  * Class EmployeeFacade
+ *
  * @package myapp\solid\srp\good
  */
 class EmployeeFacade

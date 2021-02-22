@@ -30,6 +30,7 @@ class PayCalculator
 
     /**
      * 所定労働時間の計算
+     *
      * @return int
      */
     private function regularHours(): int
@@ -37,5 +38,4 @@ class PayCalculator
         // 何らかの経理部門用の処理
         return 8;
     }
-
 }

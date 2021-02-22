@@ -1,12 +1,12 @@
 <?php
     session_start();
 
-    if (empty($_SESSION["id"])) {
-        $_SESSION["id"] = "id";
-    }
-    if (empty($_SESSION["password"])) {
-        $_SESSION["password"] = "password";
-    }
+if (empty($_SESSION["id"])) {
+    $_SESSION["id"] = "id";
+}
+if (empty($_SESSION["password"])) {
+    $_SESSION["password"] = "password";
+}
 ?>
 
 <html lang="ja">

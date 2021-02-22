@@ -8,7 +8,8 @@ namespace myapp\solid\ocp\good;
  */
 class Card implements PaymentInterface
 {
-    public function Pay()
+
+    public function pay()
     {
         // Cardの決済
         echo "Card Pay()\n";

@@ -1,15 +1,11 @@
 <?php
 declare(strict_types=1);
 
-
 namespace myapp\solid\dip\good\Controller;
-
-
-use myapp\solid\dip\good\Service\EmployeeService;
-use myapp\solid\dip\good\Service\EmployeeServiceInterface;
 
 /**
  * Class EmployeeController
+ *
  * @package myapp\solid\dip\good\Controller
  */
 class EmployeeController
@@ -17,32 +13,33 @@ class EmployeeController
     /**
      * @var EmployeeInterface
      */
-    private $_service;
+    private $service;
 
     /**
      * EmployeeController constructor.
+     *
      * @param EmployeeInterface $service
      */
     public function __construct(EmployeeInterface $service)
     {
-        $this->_service = $service;
+        $this->service = $service;
     }
 
     /**
-     * @param int $employeeId
+     * @param  int $employeeId
      * @return string
      */
     public function fetchEmployeeName(int $employeeId): string
     {
-        return $this->_service->fetchEmployeeName($employeeId);
+        return $this->service->fetchEmployeeName($employeeId);
     }
 
     /**
-     * @param int $employeeId
+     * @param  int $employeeId
      * @return int
      */
     public function fetchEmployeeSalary(int $employeeId): int
     {
-        return $this->_service->fetchEmployeeSalary($employeeId);
+        return $this->service->fetchEmployeeSalary($employeeId);
     }
 }

@@ -6,6 +6,7 @@ namespace myapp\solid\lsp\bad;
 /**
  * 長方形
  * Class Rectangle
+ *
  * @package myapp\solid\lsp\bad
  */
 class Rectangle

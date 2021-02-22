@@ -6,6 +6,7 @@ namespace myapp\solid\srp\good;
 /**
  * Class HourReporter
  * 人事部門→COO
+ *
  * @package myapp\solid\srp\good
  */
 class HourReporter
@@ -29,6 +30,7 @@ class HourReporter
 
     /**
      * 所定労働時間の計算
+     *
      * @return int
      */
     private function regularHours(): int

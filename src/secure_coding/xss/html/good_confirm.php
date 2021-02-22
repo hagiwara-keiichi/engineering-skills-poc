@@ -3,7 +3,9 @@ $name = $_POST["name"];
 $email = $_POST["email"];
 $tel = $_POST["tel"];
 $content = $_POST["content"];
-if (!(preg_match("/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/", $email) && preg_match("/^[0-9]{10,11}$/", $tel))) {
+if (!(preg_match("/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/", $email)
+    && preg_match("/^[0-9]{10,11}$/", $tel))
+) {
     echo "入力値が不正です。";
     exit();
 }

@@ -8,7 +8,8 @@ namespace myapp\solid\ocp\good;
  */
 class Apple implements PaymentInterface
 {
-    public function Pay()
+
+    public function pay()
     {
         // Appleの決済処理
         echo "Apple Pay()\n";

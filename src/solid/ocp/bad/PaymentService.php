@@ -3,27 +3,22 @@ declare(strict_types=1);
 
 namespace myapp\solid\ocp\bad;
 
-require_once "../../../../vendor/autoload.php";
-
 /**
  * Class PaymentService
  */
 class PaymentService
 {
-    public function Subscribe($paymentMethod)
+    public function subscribe($paymentMethod)
     {
         switch ($paymentMethod) {
-            case "card" :
-                (new Card())->Pay();
+            case "card":
+                (new Card())->pay();
                 break;
-            case "apple" :
-                (new Apple())->Pay();
+            case "apple":
+                (new Apple())->pay();
                 break;
-            default :
+            default:
                 break;
         }
     }
 }
-
-(new PaymentService())->Subscribe("apple");
-(new PaymentService())->Subscribe("card");

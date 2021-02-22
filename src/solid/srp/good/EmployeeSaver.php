@@ -6,6 +6,7 @@ namespace myapp\solid\srp\good;
 /**
  * Class EmployeeSaver
  * データベース管理者→CTO
+ *
  * @package myapp\solid\srp\good
  */
 class EmployeeSaver
@@ -21,6 +22,7 @@ class EmployeeSaver
     /**
      * データベース管理者が規定して使用する
      * 報告先はCTO
+     *
      * @return bool
      */
     public function saveEmployee(): bool

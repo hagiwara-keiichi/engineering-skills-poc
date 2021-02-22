@@ -8,6 +8,7 @@ use myapp\solid\dip\bad\Repository\EmployeeRepository;
 
 /**
  * Class EmployeeService
+ *
  * @package myapp\solid\dip\bad\Service
  */
 class EmployeeService
@@ -15,23 +16,24 @@ class EmployeeService
     /**
      * @var EmployeeRepository
      */
-    private $_repository;
+    private $repository;
 
     /**
      * EmployeeService constructor.
+     *
      * @param EmployeeRepository $repository
      */
     public function __construct(EmployeeRepository $repository)
     {
-        $this->_repository = $repository;
+        $this->repository = $repository;
     }
 
     /**
-     * @param int $employeeId
+     * @param  int $employeeId
      * @return string
      */
     public function fetchEmployeeSalary(int $employeeId): string
     {
-        return $this->_repository->fetchEmployeeNameById($employeeId)['name'];
+        return $this->repository->fetchEmployeeNameById($employeeId)['name'];
     }
 }

@@ -2,7 +2,7 @@
 session_start();
 
 // ログインチェック
-if(empty($_SESSION["id"])){
+if (empty($_SESSION["id"])) {
     exit("login error");
 }
 

@@ -6,6 +6,7 @@ namespace myapp\cqs;
 
 /**
  * Class Calculator
+ *
  * @package myapp\cqs
  */
 class Calculator
@@ -17,6 +18,7 @@ class Calculator
 
     /**
      * Calculator constructor.
+     *
      * @param $value
      */
     public function __construct($value)
@@ -26,9 +28,10 @@ class Calculator
 
     /**
      * 加算
-     * @param int $num
+     *
+     * @param   int $num
      * @returns Calculator
-     * @return Calculator
+     * @return  Calculator
      */
     public function add(int $num): Calculator
     {
@@ -38,9 +41,10 @@ class Calculator
 
     /**
      * 減算
-     * @param int $num
+     *
+     * @param   int $num
      * @returns Calculator
-     * @return Calculator
+     * @return  Calculator
      */
     public function sub(int $num): Calculator
     {
@@ -50,16 +54,11 @@ class Calculator
 
     /**
      * 結果
+     *
      * @return int
      */
-    public function getResult()
+    public function getResult(): int
     {
         return $this->value;
     }
 }
-
-// コマンド
-$result = (new Calculator(1))->add(2)->sub(1);
-
-// クエリ
-echo $result->getResult();

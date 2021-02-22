@@ -9,7 +9,7 @@
  */
 
 $url = $_GET['url'];
-if (preg_match('/\\r|\\n/',$url)) {
+if (preg_match('/\\r|\\n/', $url)) {
     die('Bad URL');
 }
 header('Location: ' . $url);

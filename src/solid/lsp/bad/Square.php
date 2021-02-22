@@ -6,6 +6,7 @@ namespace myapp\solid\lsp\bad;
 /**
  * 正方形
  * Class Square
+ *
  * @package myapp\solid\lsp\bad
  */
 class Square extends Rectangle

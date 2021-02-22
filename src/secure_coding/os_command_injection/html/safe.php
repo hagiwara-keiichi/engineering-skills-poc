@@ -11,7 +11,7 @@ $target = $_GET['target'];
 </form>
 
 Result<br>
-<?php if(!empty($target)): ?>
+<?php if (!empty($target)) : ?>
     <pre><?php system("nslookup "  . escapeshellarg($target)); ?></pre>
 <?php endif; ?>
 </body>

@@ -2,16 +2,16 @@
     session_start();
 
     // ログインチェック
-    if(empty($_SESSION["id"])){
-        exit("login error");
-    }
+if (empty($_SESSION["id"])) {
+    exit("login error");
+}
 
     $csrf_token = filter_input(INPUT_POST, "csrf_token") ?? '';
 
     // トークンをチェック
-    if(empty($_SESSION["csrf_token"]) || !hash_equals($_SESSION["csrf_token"], $csrf_token)){
-        exit("token error");
-    }
+if (empty($_SESSION["csrf_token"]) || !hash_equals($_SESSION["csrf_token"], $csrf_token)) {
+    exit("token error");
+}
 
     $password = filter_input(INPUT_POST, "password");
     $_SESSION["password"] = $password;

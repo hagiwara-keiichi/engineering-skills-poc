@@ -8,7 +8,7 @@ namespace myapp\solid\ocp\bad;
  */
 class Card
 {
-    public function Pay()
+    public function pay()
     {
         echo "card\n";
     }

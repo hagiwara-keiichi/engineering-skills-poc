@@ -3,8 +3,6 @@ declare(strict_types=1);
 
 namespace myapp\solid\ocp\good;
 
-require_once "../../../../vendor/autoload.php";
-
 /**
  * Class PaymentService
  */
@@ -17,11 +15,8 @@ class PaymentService
         $this->payment = $payment;
     }
 
-    public function Subscribe()
+    public function subscribe()
     {
-        $this->payment->Pay();
+        $this->payment->pay();
     }
 }
-
-(new PaymentService(new Card()))->Subscribe();
-(new PaymentService(new Apple()))->Subscribe();

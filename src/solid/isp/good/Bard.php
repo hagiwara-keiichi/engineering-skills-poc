@@ -1,12 +1,11 @@
 <?php
 declare(strict_types=1);
 
-
 namespace myapp\solid\isp\good;
-
 
 /**
  * Class Bard
+ *
  * @package myapp\solid\isp\good
  */
 class Bard implements Animal

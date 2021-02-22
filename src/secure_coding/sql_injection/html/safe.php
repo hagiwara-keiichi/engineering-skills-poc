@@ -26,7 +26,7 @@
     }
 
     header("Content-Type: text/html; charset=UTF-8");
-?>
+    ?>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -43,7 +43,7 @@
                 <th>誕生日</th>
                 <th>最終アクセス日</th>
             </tr>
-            <?php while ($row = $stmt->fetch()): ?>
+            <?php while ($row = $stmt->fetch()) : ?>
                 <tr>
                     <td><?php echo $row["name"]; ?></td>
                     <td><?php echo $row["nickname"]; ?></td>

@@ -1,9 +1,7 @@
 <?php
 declare(strict_types=1);
 
-
 namespace myapp\solid\isp\bad;
-
 
 class Dog implements Animal
 {
