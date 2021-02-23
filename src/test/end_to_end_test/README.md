@@ -11,6 +11,7 @@
 ```
 2. 任意のツールを用いてE2Eのテストを実行できること
     Selenium
+    参考: http://yebisupress.dac.co.jp/2018/07/06/test_automation_with_selenium-x-php/
 ```
 
 ```
