@@ -1,0 +1,9 @@
+version: 2
+jobs:
+    build:
+        docker:
+            - image: circleci/php:7.3
+        steps:
+            - checkout
+            - run: composer lint
+            - run: composer test
