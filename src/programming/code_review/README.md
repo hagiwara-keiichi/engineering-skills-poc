@@ -12,7 +12,7 @@
 とかが入ってれば良さそう
 
 評価者が実際のgithubのコメントみて判断してもよさそう
+```
 
 例
 https://stash.arms.dmm.com/projects/LOUNGE/repos/dmm_lounge_admin/pull-requests/1139/overview
-```
