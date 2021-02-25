@@ -27,7 +27,7 @@
 <html lang="ja">
 <body>
 <form method="GET">
-    <!--  1' OR 'a'='a と入力すると全県取れてしまう -->
+    <!--  1' OR 'a'='a と入力すると全件取れてしまう -->
     id:<input type="text" name="id" value="" /><br/>
     <input type="submit" value="送信" />
 </form>
