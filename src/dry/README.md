@@ -1,4 +1,4 @@
-# DRY (Don’t repeat yourself) 依存関係逆転の原則
+# DRY (Don’t repeat yourself)
 
 ## 原則の説明
 - 繰り返しを避けること
