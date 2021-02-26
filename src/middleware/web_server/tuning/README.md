@@ -3,6 +3,5 @@
   - パフォーマンスチューニングを理解している
 
 ```
-リソースをいじりたい時はmy.cnfを修正したりする
-参考: https://qiita.com/mamy1326/items/9c5eaee3c986cff65a55
+apacheやngnixのconfでtimeoutなどを調整したりできる
 ```
